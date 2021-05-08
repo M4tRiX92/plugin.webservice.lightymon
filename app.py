@@ -1,10 +1,21 @@
+import xbmc
+import os
+import sys
+import xbmcaddon
+import xbmcgui
+import time
+import subprocess
+import urllib2
 from flask import Flask, request, render_template
-import AddonGithubUpdater
 
 app = Flask(__name__)
 addon       = xbmcaddon.Addon()
 addonname   = addon.getAddonInfo('name')
 addon_dir = xbmc.translatePath( addon.getAddonInfo('path'))
+sys.path.append(os.path.join( addon_dir, 'resources', 'lib' ) )
+
+
+import AddonGithubUpdater
 
 try:
     updater=AddonGithubUpdater.AddonGithubUpdater(addon_dir,"M4tRiX92","plugin.webservice.lightymon")
