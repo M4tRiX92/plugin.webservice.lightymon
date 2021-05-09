@@ -8,6 +8,7 @@ import subprocess
 import urllib2
 from flask import Flask, request, render_template
 
+
 app = Flask(__name__)
 addon       = xbmcaddon.Addon()
 addonname   = addon.getAddonInfo('name')
