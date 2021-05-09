@@ -17,7 +17,7 @@ sys.path.append(os.path.join( addon_dir, 'resources', 'lib' ) )
 
 
 import AddonGithubUpdater
-
+from resources import myfunction
 try:
     updater=AddonGithubUpdater.AddonGithubUpdater(addon_dir,"M4tRiX92","plugin.webservice.lightymon")
     if updater.isUpdateAvailable():

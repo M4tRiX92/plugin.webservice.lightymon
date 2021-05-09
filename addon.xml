@@ -5,6 +5,7 @@
        provider-name="Lightymon">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="plugin.program.hyperion.configurator.lightymon-main" version="1.0.10"/>
   </requires>
   <extension point="xbmc.service" library="app.py" />
   <extension point="xbmc.addon.metadata">
