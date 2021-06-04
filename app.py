@@ -49,8 +49,7 @@ def my_form_post():
         device = request.form['device']
         center_corner = request.form['center_corner']
         processed_text = "ledv " + ledv + " - ledh " + ledh + " - direction " + direction + " - device " + device + " - center_corner " + center_corner
-        #scripttorun = "RunScript(script.addon, ledh ledv)"
-        #xbmc.executebuiltin(scripttorun, True)
+        #setEverything(ledh, ledv, options)
         return processed_text
 
     # show the form, it wasn't submitted
