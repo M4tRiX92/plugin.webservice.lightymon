@@ -1,3 +1,4 @@
 1.0.0 Initial Release
 1.0.1 Relocated css
 1.0.2 New favicon + xml modified
+1.0.3 import removed

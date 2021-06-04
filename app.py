@@ -17,7 +17,7 @@ sys.path.append(os.path.join( addon_dir, 'resources', 'lib' ) )
 
 
 import AddonGithubUpdater
-from resources import myfunction
+
 try:
     updater=AddonGithubUpdater.AddonGithubUpdater(addon_dir,"M4tRiX92","plugin.webservice.lightymon")
     if updater.isUpdateAvailable():
@@ -49,7 +49,8 @@ def my_form_post():
         device = request.form['device']
         center_corner = request.form['center_corner']
         processed_text = "ledv " + ledv + " - ledh " + ledh + " - direction " + direction + " - device " + device + " - center_corner " + center_corner
-        #setEverything(ledh, ledv, options)
+        #scripttorun = "RunScript(script.addon, ledh ledv)"
+        #xbmc.executebuiltin(scripttorun, True)
         return processed_text
 
     # show the form, it wasn't submitted
